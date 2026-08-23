@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\sinao\Downloads\Garmin\CleanNavigation\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="c:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\bin\\gen\\006-B4440-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="3" lineNum="5" parent="globals/CleanNavigationApp" pc="268435501" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="4" lineNum="17" parent="globals/CleanNavigationView" pc="268435513" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="5" lineNum="12" parent="globals/CleanNavigationApp" pc="268435525" symbol="onStart"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="6" lineNum="20" parent="globals/CleanNavigationApp" pc="268435528" symbol="getInitialView"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="6" lineNum="21" parent="globals/CleanNavigationApp" pc="268435530" symbol="getInitialView"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="7" lineNum="7" parent="globals/CleanNavigationApp" pc="268435556" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="7" lineNum="8" parent="globals/CleanNavigationApp" pc="268435558" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationApp.mc" id="8" lineNum="16" parent="globals/CleanNavigationApp" pc="268435571" symbol="onStop"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="93" parent="globals/CleanNavigationView" pc="268435574" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="94" parent="globals/CleanNavigationView" pc="268435577" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="95" parent="globals/CleanNavigationView" pc="268435593" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="97" parent="globals/CleanNavigationView" pc="268435597" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="98" parent="globals/CleanNavigationView" pc="268435609" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="99" parent="globals/CleanNavigationView" pc="268435615" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="101" parent="globals/CleanNavigationView" pc="268435619" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="102" parent="globals/CleanNavigationView" pc="268435629" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="104" parent="globals/CleanNavigationView" pc="268435663" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="105" parent="globals/CleanNavigationView" pc="268435673" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="106" parent="globals/CleanNavigationView" pc="268435676" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="107" parent="globals/CleanNavigationView" pc="268435686" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="110" parent="globals/CleanNavigationView" pc="268435703" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="9" lineNum="111" parent="globals/CleanNavigationView" pc="268435726" symbol="computeWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="64" parent="globals/CleanNavigationView" pc="268435756" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="65" parent="globals/CleanNavigationView" pc="268435759" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="66" parent="globals/CleanNavigationView" pc="268435792" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="67" parent="globals/CleanNavigationView" pc="268435825" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="69" parent="globals/CleanNavigationView" pc="268435858" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="70" parent="globals/CleanNavigationView" pc="268435871" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="71" parent="globals/CleanNavigationView" pc="268435884" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="73" parent="globals/CleanNavigationView" pc="268435917" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="74" parent="globals/CleanNavigationView" pc="268435946" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="75" parent="globals/CleanNavigationView" pc="268435970" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="76" parent="globals/CleanNavigationView" pc="268435976" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="77" parent="globals/CleanNavigationView" pc="268435988" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="78" parent="globals/CleanNavigationView" pc="268435997" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="79" parent="globals/CleanNavigationView" pc="268436000" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="80" parent="globals/CleanNavigationView" pc="268436022" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="82" parent="globals/CleanNavigationView" pc="268436037" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="83" parent="globals/CleanNavigationView" pc="268436042" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="84" parent="globals/CleanNavigationView" pc="268436060" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="86" parent="globals/CleanNavigationView" pc="268436078" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="88" parent="globals/CleanNavigationView" pc="268436113" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="10" lineNum="90" parent="globals/CleanNavigationView" pc="268436146" symbol="compute"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="151" parent="globals/CleanNavigationView" pc="268436158" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="152" parent="globals/CleanNavigationView" pc="268436161" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="153" parent="globals/CleanNavigationView" pc="268436170" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="155" parent="globals/CleanNavigationView" pc="268436194" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="156" parent="globals/CleanNavigationView" pc="268436201" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="157" parent="globals/CleanNavigationView" pc="268436223" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="157" parent="globals/CleanNavigationView" pc="268436231" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="158" parent="globals/CleanNavigationView" pc="268436261" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="158" parent="globals/CleanNavigationView" pc="268436270" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="11" lineNum="159" parent="globals/CleanNavigationView" pc="268436300" symbol="windColors"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="12" lineNum="330" parent="globals/CleanNavigationView" pc="268436327" symbol="drawSlimWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="12" lineNum="331" parent="globals/CleanNavigationView" pc="268436330" symbol="drawSlimWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="12" lineNum="332" parent="globals/CleanNavigationView" pc="268436338" symbol="drawSlimWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="12" lineNum="333" parent="globals/CleanNavigationView" pc="268436361" symbol="drawSlimWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="12" lineNum="334" parent="globals/CleanNavigationView" pc="268436371" symbol="drawSlimWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="12" lineNum="335" parent="globals/CleanNavigationView" pc="268436411" symbol="drawSlimWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="12" lineNum="336" parent="globals/CleanNavigationView" pc="268436441" symbol="drawSlimWind"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="13" lineNum="431" parent="globals/CleanNavigationView" pc="268436492" symbol="drawHeart"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="13" lineNum="432" parent="globals/CleanNavigationView" pc="268436495" symbol="drawHeart"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="13" lineNum="433" parent="globals/CleanNavigationView" pc="268436509" symbol="drawHeart"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="13" lineNum="434" parent="globals/CleanNavigationView" pc="268436519" symbol="drawHeart"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="13" lineNum="435" parent="globals/CleanNavigationView" pc="268436553" symbol="drawHeart"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="13" lineNum="436" parent="globals/CleanNavigationView" pc="268436587" symbol="drawHeart"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="302" parent="globals/CleanNavigationView" pc="268436698" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="303" parent="globals/CleanNavigationView" pc="268436701" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="304" parent="globals/CleanNavigationView" pc="268436705" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="305" parent="globals/CleanNavigationView" pc="268436712" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="306" parent="globals/CleanNavigationView" pc="268436719" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="307" parent="globals/CleanNavigationView" pc="268436735" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="308" parent="globals/CleanNavigationView" pc="268436751" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="309" parent="globals/CleanNavigationView" pc="268436767" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="311" parent="globals/CleanNavigationView" pc="268436780" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="312" parent="globals/CleanNavigationView" pc="268436783" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="313" parent="globals/CleanNavigationView" pc="268436802" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="314" parent="globals/CleanNavigationView" pc="268436809" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="315" parent="globals/CleanNavigationView" pc="268436826" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="316" parent="globals/CleanNavigationView" pc="268436844" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="317" parent="globals/CleanNavigationView" pc="268436851" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="318" parent="globals/CleanNavigationView" pc="268436870" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="319" parent="globals/CleanNavigationView" pc="268436877" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="320" parent="globals/CleanNavigationView" pc="268436894" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="321" parent="globals/CleanNavigationView" pc="268436912" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="322" parent="globals/CleanNavigationView" pc="268436919" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="323" parent="globals/CleanNavigationView" pc="268436939" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="324" parent="globals/CleanNavigationView" pc="268436946" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="325" parent="globals/CleanNavigationView" pc="268436963" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="326" parent="globals/CleanNavigationView" pc="268436981" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="14" lineNum="327" parent="globals/CleanNavigationView" pc="268436988" symbol="drawSlim"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="441" parent="globals/CleanNavigationView" pc="268437009" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="442" parent="globals/CleanNavigationView" pc="268437012" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="443" parent="globals/CleanNavigationView" pc="268437066" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="444" parent="globals/CleanNavigationView" pc="268437076" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="445" parent="globals/CleanNavigationView" pc="268437086" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="446" parent="globals/CleanNavigationView" pc="268437102" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="448" parent="globals/CleanNavigationView" pc="268437166" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="15" lineNum="449" parent="globals/CleanNavigationView" pc="268437180" symbol="drawBolt"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="16" lineNum="452" parent="globals/CleanNavigationView" pc="268437193" symbol="drawAvgGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="16" lineNum="453" parent="globals/CleanNavigationView" pc="268437195" symbol="drawAvgGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="16" lineNum="454" parent="globals/CleanNavigationView" pc="268437209" symbol="drawAvgGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="16" lineNum="455" parent="globals/CleanNavigationView" pc="268437221" symbol="drawAvgGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="16" lineNum="456" parent="globals/CleanNavigationView" pc="268437237" symbol="drawAvgGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="16" lineNum="457" parent="globals/CleanNavigationView" pc="268437267" symbol="drawAvgGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="503" parent="globals/CleanNavigationView" pc="268437280" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="506" parent="globals/CleanNavigationView" pc="268437283" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="507" parent="globals/CleanNavigationView" pc="268437298" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="508" parent="globals/CleanNavigationView" pc="268437313" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="509" parent="globals/CleanNavigationView" pc="268437329" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="510" parent="globals/CleanNavigationView" pc="268437343" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="512" parent="globals/CleanNavigationView" pc="268437363" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="513" parent="globals/CleanNavigationView" pc="268437376" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="514" parent="globals/CleanNavigationView" pc="268437389" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="17" lineNum="515" parent="globals/CleanNavigationView" pc="268437403" symbol="drawValueUnitCenter"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="340" parent="globals/CleanNavigationView" pc="268437442" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="341" parent="globals/CleanNavigationView" pc="268437445" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="342" parent="globals/CleanNavigationView" pc="268437455" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="343" parent="globals/CleanNavigationView" pc="268437470" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="345" parent="globals/CleanNavigationView" pc="268437497" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="349" parent="globals/CleanNavigationView" pc="268437547" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="350" parent="globals/CleanNavigationView" pc="268437566" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="351" parent="globals/CleanNavigationView" pc="268437581" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="352" parent="globals/CleanNavigationView" pc="268437596" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="353" parent="globals/CleanNavigationView" pc="268437599" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="354" parent="globals/CleanNavigationView" pc="268437614" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="355" parent="globals/CleanNavigationView" pc="268437629" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="356" parent="globals/CleanNavigationView" pc="268437648" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="357" parent="globals/CleanNavigationView" pc="268437658" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="358" parent="globals/CleanNavigationView" pc="268437683" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="359" parent="globals/CleanNavigationView" pc="268437700" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="360" parent="globals/CleanNavigationView" pc="268437723" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="361" parent="globals/CleanNavigationView" pc="268437757" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="18" lineNum="362" parent="globals/CleanNavigationView" pc="268437774" symbol="drawSlimSpeed"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="19" lineNum="61" parent="globals/CleanNavigationView" pc="268437807" symbol="onLayout"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="199" parent="globals/CleanNavigationView" pc="268437810" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="200" parent="globals/CleanNavigationView" pc="268437813" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="201" parent="globals/CleanNavigationView" pc="268437817" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="202" parent="globals/CleanNavigationView" pc="268437836" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="203" parent="globals/CleanNavigationView" pc="268437846" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="206" parent="globals/CleanNavigationView" pc="268437853" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="207" parent="globals/CleanNavigationView" pc="268437869" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="208" parent="globals/CleanNavigationView" pc="268437877" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="209" parent="globals/CleanNavigationView" pc="268437893" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="210" parent="globals/CleanNavigationView" pc="268437910" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="211" parent="globals/CleanNavigationView" pc="268437920" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="212" parent="globals/CleanNavigationView" pc="268437954" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="213" parent="globals/CleanNavigationView" pc="268437984" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="216" parent="globals/CleanNavigationView" pc="268438037" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="217" parent="globals/CleanNavigationView" pc="268438054" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="220" parent="globals/CleanNavigationView" pc="268438072" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="221" parent="globals/CleanNavigationView" pc="268438088" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="222" parent="globals/CleanNavigationView" pc="268438095" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="223" parent="globals/CleanNavigationView" pc="268438112" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="225" parent="globals/CleanNavigationView" pc="268438139" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="226" parent="globals/CleanNavigationView" pc="268438146" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="227" parent="globals/CleanNavigationView" pc="268438165" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="228" parent="globals/CleanNavigationView" pc="268438184" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="229" parent="globals/CleanNavigationView" pc="268438206" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="230" parent="globals/CleanNavigationView" pc="268438223" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="232" parent="globals/CleanNavigationView" pc="268438257" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="233" parent="globals/CleanNavigationView" pc="268438279" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="234" parent="globals/CleanNavigationView" pc="268438296" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="238" parent="globals/CleanNavigationView" pc="268438330" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="239" parent="globals/CleanNavigationView" pc="268438345" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="240" parent="globals/CleanNavigationView" pc="268438361" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="242" parent="globals/CleanNavigationView" pc="268438382" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="246" parent="globals/CleanNavigationView" pc="268438426" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="247" parent="globals/CleanNavigationView" pc="268438443" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="250" parent="globals/CleanNavigationView" pc="268438463" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="251" parent="globals/CleanNavigationView" pc="268438482" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="252" parent="globals/CleanNavigationView" pc="268438501" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="253" parent="globals/CleanNavigationView" pc="268438518" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="20" lineNum="254" parent="globals/CleanNavigationView" pc="268438536" symbol="drawTall"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="489" parent="globals/CleanNavigationView" pc="268438566" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="492" parent="globals/CleanNavigationView" pc="268438569" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="493" parent="globals/CleanNavigationView" pc="268438584" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="494" parent="globals/CleanNavigationView" pc="268438598" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="496" parent="globals/CleanNavigationView" pc="268438624" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="497" parent="globals/CleanNavigationView" pc="268438637" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="498" parent="globals/CleanNavigationView" pc="268438650" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="21" lineNum="499" parent="globals/CleanNavigationView" pc="268438664" symbol="drawValueUnitRight"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="413" parent="globals/CleanNavigationView" pc="268438697" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="414" parent="globals/CleanNavigationView" pc="268438700" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="415" parent="globals/CleanNavigationView" pc="268438726" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="417" parent="globals/CleanNavigationView" pc="268438788" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="418" parent="globals/CleanNavigationView" pc="268438798" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="419" parent="globals/CleanNavigationView" pc="268438814" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="420" parent="globals/CleanNavigationView" pc="268438830" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="421" parent="globals/CleanNavigationView" pc="268438840" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="422" parent="globals/CleanNavigationView" pc="268438850" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="423" parent="globals/CleanNavigationView" pc="268438866" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="424" parent="globals/CleanNavigationView" pc="268438884" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="425" parent="globals/CleanNavigationView" pc="268438903" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="427" parent="globals/CleanNavigationView" pc="268438956" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="22" lineNum="428" parent="globals/CleanNavigationView" pc="268438970" symbol="drawWindArrow"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="365" parent="globals/CleanNavigationView" pc="268438983" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="366" parent="globals/CleanNavigationView" pc="268438986" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="367" parent="globals/CleanNavigationView" pc="268439006" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="368" parent="globals/CleanNavigationView" pc="268439026" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="369" parent="globals/CleanNavigationView" pc="268439046" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="372" parent="globals/CleanNavigationView" pc="268439073" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="373" parent="globals/CleanNavigationView" pc="268439087" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="375" parent="globals/CleanNavigationView" pc="268439105" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="376" parent="globals/CleanNavigationView" pc="268439121" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="377" parent="globals/CleanNavigationView" pc="268439140" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="378" parent="globals/CleanNavigationView" pc="268439164" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="380" parent="globals/CleanNavigationView" pc="268439194" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="381" parent="globals/CleanNavigationView" pc="268439204" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="382" parent="globals/CleanNavigationView" pc="268439219" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="383" parent="globals/CleanNavigationView" pc="268439229" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="384" parent="globals/CleanNavigationView" pc="268439239" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="385" parent="globals/CleanNavigationView" pc="268439244" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="387" parent="globals/CleanNavigationView" pc="268439272" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="389" parent="globals/CleanNavigationView" pc="268439303" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="390" parent="globals/CleanNavigationView" pc="268439320" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="394" parent="globals/CleanNavigationView" pc="268439346" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="395" parent="globals/CleanNavigationView" pc="268439365" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="396" parent="globals/CleanNavigationView" pc="268439368" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="397" parent="globals/CleanNavigationView" pc="268439392" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="398" parent="globals/CleanNavigationView" pc="268439416" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="399" parent="globals/CleanNavigationView" pc="268439431" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="400" parent="globals/CleanNavigationView" pc="268439446" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="401" parent="globals/CleanNavigationView" pc="268439462" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="402" parent="globals/CleanNavigationView" pc="268439472" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="403" parent="globals/CleanNavigationView" pc="268439478" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="404" parent="globals/CleanNavigationView" pc="268439492" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="406" parent="globals/CleanNavigationView" pc="268439515" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="407" parent="globals/CleanNavigationView" pc="268439546" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="23" lineNum="408" parent="globals/CleanNavigationView" pc="268439563" symbol="drawSlimZone"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="468" parent="globals/CleanNavigationView" pc="268439593" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="469" parent="globals/CleanNavigationView" pc="268439596" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="470" parent="globals/CleanNavigationView" pc="268439602" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="472" parent="globals/CleanNavigationView" pc="268439611" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="473" parent="globals/CleanNavigationView" pc="268439627" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="474" parent="globals/CleanNavigationView" pc="268439643" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="475" parent="globals/CleanNavigationView" pc="268439649" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="24" lineNum="477" parent="globals/CleanNavigationView" pc="268439694" symbol="fmt1"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="25" lineNum="480" parent="globals/CleanNavigationView" pc="268439697" symbol="pickFont"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="25" lineNum="481" parent="globals/CleanNavigationView" pc="268439700" symbol="pickFont"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="25" lineNum="482" parent="globals/CleanNavigationView" pc="268439716" symbol="pickFont"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="25" lineNum="483" parent="globals/CleanNavigationView" pc="268439738" symbol="pickFont"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="25" lineNum="486" parent="globals/CleanNavigationView" pc="268439757" symbol="pickFont"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="115" parent="globals/CleanNavigationView" pc="268439771" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="116" parent="globals/CleanNavigationView" pc="268439774" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="117" parent="globals/CleanNavigationView" pc="268439781" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="118" parent="globals/CleanNavigationView" pc="268439801" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="120" parent="globals/CleanNavigationView" pc="268439807" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="121" parent="globals/CleanNavigationView" pc="268439819" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="122" parent="globals/CleanNavigationView" pc="268439830" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="26" lineNum="125" parent="globals/CleanNavigationView" pc="268439846" symbol="hrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="47" parent="globals/CleanNavigationView" pc="268439849" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="48" parent="globals/CleanNavigationView" pc="268439851" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="49" parent="globals/CleanNavigationView" pc="268439863" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="50" parent="globals/CleanNavigationView" pc="268439871" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="51" parent="globals/CleanNavigationView" pc="268439879" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="52" parent="globals/CleanNavigationView" pc="268439887" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="53" parent="globals/CleanNavigationView" pc="268439899" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="54" parent="globals/CleanNavigationView" pc="268439910" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="55" parent="globals/CleanNavigationView" pc="268439921" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="56" parent="globals/CleanNavigationView" pc="268439933" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="57" parent="globals/CleanNavigationView" pc="268439944" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="27" lineNum="58" parent="globals/CleanNavigationView" pc="268439956" symbol="initialize"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="28" lineNum="460" parent="globals/CleanNavigationView" pc="268439978" symbol="drawMaxGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="28" lineNum="461" parent="globals/CleanNavigationView" pc="268439980" symbol="drawMaxGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="28" lineNum="462" parent="globals/CleanNavigationView" pc="268439994" symbol="drawMaxGlyph"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="128" parent="globals/CleanNavigationView" pc="268440093" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="129" parent="globals/CleanNavigationView" pc="268440096" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="130" parent="globals/CleanNavigationView" pc="268440101" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="132" parent="globals/CleanNavigationView" pc="268440104" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="133" parent="globals/CleanNavigationView" pc="268440129" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="134" parent="globals/CleanNavigationView" pc="268440133" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="136" parent="globals/CleanNavigationView" pc="268440148" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="137" parent="globals/CleanNavigationView" pc="268440176" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="140" parent="globals/CleanNavigationView" pc="268440183" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="141" parent="globals/CleanNavigationView" pc="268440196" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="141" parent="globals/CleanNavigationView" pc="268440204" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="142" parent="globals/CleanNavigationView" pc="268440210" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="142" parent="globals/CleanNavigationView" pc="268440218" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="143" parent="globals/CleanNavigationView" pc="268440224" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="143" parent="globals/CleanNavigationView" pc="268440232" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="144" parent="globals/CleanNavigationView" pc="268440238" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="144" parent="globals/CleanNavigationView" pc="268440246" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="145" parent="globals/CleanNavigationView" pc="268440252" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="145" parent="globals/CleanNavigationView" pc="268440260" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="146" parent="globals/CleanNavigationView" pc="268440266" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="146" parent="globals/CleanNavigationView" pc="268440275" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="29" lineNum="147" parent="globals/CleanNavigationView" pc="268440281" symbol="pwrZoneFor"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="162" parent="globals/CleanNavigationView" pc="268440284" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="163" parent="globals/CleanNavigationView" pc="268440287" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="164" parent="globals/CleanNavigationView" pc="268440302" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="165" parent="globals/CleanNavigationView" pc="268440310" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="166" parent="globals/CleanNavigationView" pc="268440321" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="167" parent="globals/CleanNavigationView" pc="268440333" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="168" parent="globals/CleanNavigationView" pc="268440345" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="169" parent="globals/CleanNavigationView" pc="268440356" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="170" parent="globals/CleanNavigationView" pc="268440367" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="172" parent="globals/CleanNavigationView" pc="268440381" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="173" parent="globals/CleanNavigationView" pc="268440393" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="174" parent="globals/CleanNavigationView" pc="268440404" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="175" parent="globals/CleanNavigationView" pc="268440415" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="176" parent="globals/CleanNavigationView" pc="268440427" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="177" parent="globals/CleanNavigationView" pc="268440438" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="180" parent="globals/CleanNavigationView" pc="268440450" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="181" parent="globals/CleanNavigationView" pc="268440467" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="183" parent="globals/CleanNavigationView" pc="268440475" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="184" parent="globals/CleanNavigationView" pc="268440484" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="187" parent="globals/CleanNavigationView" pc="268440493" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="188" parent="globals/CleanNavigationView" pc="268440510" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="190" parent="globals/CleanNavigationView" pc="268440526" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="191" parent="globals/CleanNavigationView" pc="268440535" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="30" lineNum="193" parent="globals/CleanNavigationView" pc="268440553" symbol="onUpdate"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="258" parent="globals/CleanNavigationView" pc="268440569" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="259" parent="globals/CleanNavigationView" pc="268440572" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="260" parent="globals/CleanNavigationView" pc="268440592" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="261" parent="globals/CleanNavigationView" pc="268440612" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="263" parent="globals/CleanNavigationView" pc="268440632" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="264" parent="globals/CleanNavigationView" pc="268440639" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="265" parent="globals/CleanNavigationView" pc="268440646" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="266" parent="globals/CleanNavigationView" pc="268440652" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="267" parent="globals/CleanNavigationView" pc="268440665" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="269" parent="globals/CleanNavigationView" pc="268440681" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="270" parent="globals/CleanNavigationView" pc="268440695" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="272" parent="globals/CleanNavigationView" pc="268440713" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="273" parent="globals/CleanNavigationView" pc="268440723" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="274" parent="globals/CleanNavigationView" pc="268440727" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="275" parent="globals/CleanNavigationView" pc="268440737" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="276" parent="globals/CleanNavigationView" pc="268440742" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="278" parent="globals/CleanNavigationView" pc="268440773" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="280" parent="globals/CleanNavigationView" pc="268440807" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="281" parent="globals/CleanNavigationView" pc="268440831" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="283" parent="globals/CleanNavigationView" pc="268440858" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="284" parent="globals/CleanNavigationView" pc="268440872" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="287" parent="globals/CleanNavigationView" pc="268440901" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="288" parent="globals/CleanNavigationView" pc="268440911" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="289" parent="globals/CleanNavigationView" pc="268440917" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="292" parent="globals/CleanNavigationView" pc="268440961" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="293" parent="globals/CleanNavigationView" pc="268440985" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="294" parent="globals/CleanNavigationView" pc="268441004" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="296" parent="globals/CleanNavigationView" pc="268441024" symbol="drawZoneBlock"/>
+<entry filename="C:\\Users\\sinao\\Downloads\\Garmin\\CleanNavigation\\source\\CleanNavigationView.mc" id="31" lineNum="297" parent="globals/CleanNavigationView" pc="268441039" symbol="drawZoneBlock"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="33" symbol="mAvgSpd"/>
+<entry id="46" method="true" symbol="pickFont"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry field="true" id="36" symbol="mHrZone"/>
+<entry id="6" object="true" symbol="CleanNavigationView"/>
+<entry id="19" method="true" symbol="drawMaxGlyph"/>
+<entry field="true" id="11" symbol="cFg"/>
+<entry field="true" id="9" symbol="cBg"/>
+<entry field="true" id="14" symbol="cTop"/>
+<entry id="23" method="true" symbol="drawSlimZone"/>
+<entry id="8388647" module="true" symbol="UserProfile"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="37" symbol="mHrZones"/>
+<entry field="true" id="8389814" symbol="timerState"/>
+<entry field="true" id="39" symbol="mPwr"/>
+<entry field="true" id="50" symbol="AppName"/>
+<entry id="4" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry field="true" id="13" symbol="cSub"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="40" symbol="mPwrCnt"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8391489" module="true" symbol="Weather"/>
+<entry id="48" method="true" symbol="windColors"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="31" symbol="mAvgHr"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="12" symbol="cPanel"/>
+<entry id="18" method="true" symbol="drawHeart"/>
+<entry field="true" id="32" symbol="mAvgPwr"/>
+<entry id="16" method="true" symbol="drawAvgGlyph"/>
+<entry id="8389137" method="true" symbol="compute"/>
+<entry id="30" method="true" symbol="hrZoneFor"/>
+<entry field="true" id="38" symbol="mMaxSpd"/>
+<entry field="true" id="8388742" symbol="currentPower"/>
+<entry id="8" symbol="ZONE_FG"/>
+<entry id="21" method="true" symbol="drawSlimSpeed"/>
+<entry id="24" method="true" symbol="drawTall"/>
+<entry id="7" symbol="ZONE_BG"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry field="true" id="35" symbol="mHr"/>
+<entry id="17" method="true" symbol="drawBolt"/>
+<entry field="true" id="42" symbol="mPwrZone"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="20" method="true" symbol="drawSlim"/>
+<entry id="22" method="true" symbol="drawSlimWind"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="45" symbol="mWindRelDeg"/>
+<entry id="29" method="true" symbol="fmt1"/>
+<entry id="47" method="true" symbol="pwrZoneFor"/>
+<entry field="true" id="10" symbol="cDiv"/>
+<entry field="true" id="49" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry field="true" id="34" symbol="mDark"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="41" symbol="mPwrSum"/>
+<entry id="25" method="true" symbol="drawValueUnitCenter"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry field="true" id="51" symbol="FtpTitle"/>
+<entry field="true" id="43" symbol="mSpd"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="26" method="true" symbol="drawValueUnitRight"/>
+<entry id="27" method="true" symbol="drawWindArrow"/>
+<entry id="28" method="true" symbol="drawZoneBlock"/>
+<entry id="15" method="true" symbol="computeWind"/>
+<entry id="5" object="true" symbol="CleanNavigationApp"/>
+<entry field="true" id="8388743" symbol="averagePower"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="44" symbol="mWindKmh"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435755" name="info" stackId="1" startPc="268435574"/>
+<entry endPc="268435754" name="cc" stackId="2" startPc="268435577"/>
+<entry endPc="268435751" name="headDeg" stackId="3" startPc="268435673"/>
+<entry endPc="268435751" name="rel" stackId="4" startPc="268435673"/>
+<entry arg="true" endPc="268436157" name="info" stackId="1" startPc="268435756"/>
+<entry endPc="268436156" name="avgP" stackId="2" startPc="268435759"/>
+<entry endPc="268436109" name="running" stackId="3" startPc="268435997"/>
+<entry endPc="268436326" name="deg" stackId="1" startPc="268436161"/>
+<entry endPc="268436326" name="off" stackId="2" startPc="268436161"/>
+<entry arg="true" endPc="268436491" name="dc" stackId="1" startPc="268436327"/>
+<entry arg="true" endPc="268436491" name="x" stackId="2" startPc="268436327"/>
+<entry arg="true" endPc="268436491" name="y" stackId="3" startPc="268436327"/>
+<entry arg="true" endPc="268436491" name="bw" stackId="4" startPc="268436327"/>
+<entry arg="true" endPc="268436491" name="bh" stackId="5" startPc="268436327"/>
+<entry endPc="268436490" name="wc" stackId="6" startPc="268436330"/>
+<entry endPc="268436490" name="tint" stackId="7" startPc="268436330"/>
+<entry endPc="268436490" name="cx" stackId="8" startPc="268436330"/>
+<entry endPc="268436490" name="windTxt" stackId="9" startPc="268436330"/>
+<entry arg="true" endPc="268436697" name="dc" stackId="1" startPc="268436492"/>
+<entry arg="true" endPc="268436697" name="cx" stackId="2" startPc="268436492"/>
+<entry arg="true" endPc="268436697" name="cy" stackId="3" startPc="268436492"/>
+<entry arg="true" endPc="268436697" name="size" stackId="4" startPc="268436492"/>
+<entry arg="true" endPc="268436697" name="color" stackId="5" startPc="268436492"/>
+<entry endPc="268436696" name="r" stackId="6" startPc="268436495"/>
+<entry arg="true" endPc="268437008" name="dc" stackId="1" startPc="268436698"/>
+<entry arg="true" endPc="268437008" name="w" stackId="2" startPc="268436698"/>
+<entry arg="true" endPc="268437008" name="h" stackId="3" startPc="268436698"/>
+<entry endPc="268437007" name="y0" stackId="4" startPc="268436701"/>
+<entry endPc="268437007" name="bh" stackId="5" startPc="268436701"/>
+<entry endPc="268437007" name="inner" stackId="6" startPc="268436701"/>
+<entry endPc="268437007" name="w0" stackId="7" startPc="268436701"/>
+<entry endPc="268437007" name="w1" stackId="8" startPc="268436701"/>
+<entry endPc="268437007" name="w2" stackId="9" startPc="268436701"/>
+<entry endPc="268437007" name="w3" stackId="10" startPc="268436701"/>
+<entry endPc="268437007" name="x" stackId="11" startPc="268436701"/>
+<entry arg="true" endPc="268437192" name="dc" stackId="1" startPc="268437009"/>
+<entry arg="true" endPc="268437192" name="cx" stackId="2" startPc="268437009"/>
+<entry arg="true" endPc="268437192" name="cy" stackId="3" startPc="268437009"/>
+<entry arg="true" endPc="268437192" name="size" stackId="4" startPc="268437009"/>
+<entry arg="true" endPc="268437192" name="color" stackId="5" startPc="268437009"/>
+<entry endPc="268437191" name="pts" stackId="6" startPc="268437012"/>
+<entry endPc="268437191" name="k" stackId="7" startPc="268437012"/>
+<entry endPc="268437191" name="out" stackId="8" startPc="268437012"/>
+<entry endPc="268437165" name="i" stackId="9" startPc="268437102"/>
+<entry arg="true" endPc="268437279" name="dc" stackId="1" startPc="268437193"/>
+<entry arg="true" endPc="268437279" name="cx" stackId="2" startPc="268437193"/>
+<entry arg="true" endPc="268437279" name="cy" stackId="3" startPc="268437193"/>
+<entry arg="true" endPc="268437279" name="r" stackId="4" startPc="268437193"/>
+<entry arg="true" endPc="268437279" name="color" stackId="5" startPc="268437193"/>
+<entry arg="true" endPc="268437441" name="dc" stackId="1" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="xCenter" stackId="2" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="yCenter" stackId="3" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="val" stackId="4" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="vFont" stackId="5" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="unit" stackId="6" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="uFont" stackId="7" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="vColor" stackId="8" startPc="268437280"/>
+<entry arg="true" endPc="268437441" name="uColor" stackId="9" startPc="268437280"/>
+<entry endPc="268437440" name="vw" stackId="10" startPc="268437283"/>
+<entry endPc="268437440" name="uw" stackId="11" startPc="268437283"/>
+<entry endPc="268437440" name="x" stackId="12" startPc="268437283"/>
+<entry endPc="268437440" name="vh" stackId="13" startPc="268437283"/>
+<entry endPc="268437440" name="uh" stackId="14" startPc="268437283"/>
+<entry arg="true" endPc="268437806" name="dc" stackId="1" startPc="268437442"/>
+<entry arg="true" endPc="268437806" name="x" stackId="2" startPc="268437442"/>
+<entry arg="true" endPc="268437806" name="y" stackId="3" startPc="268437442"/>
+<entry arg="true" endPc="268437806" name="bw" stackId="4" startPc="268437442"/>
+<entry arg="true" endPc="268437806" name="bh" stackId="5" startPc="268437442"/>
+<entry endPc="268437805" name="cx" stackId="6" startPc="268437445"/>
+<entry endPc="268437805" name="spdTxt" stackId="7" startPc="268437445"/>
+<entry endPc="268437805" name="vFont" stackId="8" startPc="268437445"/>
+<entry endPc="268437805" name="subY" stackId="9" startPc="268437445"/>
+<entry endPc="268437805" name="avgTxt" stackId="10" startPc="268437445"/>
+<entry endPc="268437805" name="maxTxt" stackId="11" startPc="268437445"/>
+<entry endPc="268437805" name="f" stackId="12" startPc="268437445"/>
+<entry endPc="268437805" name="aw" stackId="13" startPc="268437445"/>
+<entry endPc="268437805" name="mw" stackId="14" startPc="268437445"/>
+<entry endPc="268437805" name="total" stackId="15" startPc="268437445"/>
+<entry endPc="268437805" name="sx" stackId="16" startPc="268437445"/>
+<entry arg="true" endPc="268438565" name="dc" stackId="1" startPc="268437810"/>
+<entry arg="true" endPc="268438565" name="w" stackId="2" startPc="268437810"/>
+<entry arg="true" endPc="268438565" name="h" stackId="3" startPc="268437810"/>
+<entry endPc="268438564" name="y0" stackId="4" startPc="268437813"/>
+<entry endPc="268438564" name="row1H" stackId="5" startPc="268437813"/>
+<entry endPc="268438564" name="row2Y" stackId="6" startPc="268437813"/>
+<entry endPc="268438564" name="row2H" stackId="7" startPc="268437813"/>
+<entry endPc="268438564" name="windW" stackId="8" startPc="268437813"/>
+<entry endPc="268438564" name="wc" stackId="9" startPc="268437813"/>
+<entry endPc="268438564" name="arrowSize" stackId="10" startPc="268437813"/>
+<entry endPc="268438564" name="windTxt" stackId="11" startPc="268437813"/>
+<entry endPc="268438564" name="colW" stackId="12" startPc="268437813"/>
+<entry endPc="268438564" name="colX" stackId="13" startPc="268437813"/>
+<entry endPc="268438564" name="glyphX" stackId="14" startPc="268437813"/>
+<entry endPc="268438564" name="avgY" stackId="15" startPc="268437813"/>
+<entry endPc="268438564" name="maxY" stackId="16" startPc="268437813"/>
+<entry endPc="268438564" name="spdTxt" stackId="17" startPc="268437813"/>
+<entry endPc="268438564" name="maxWidth" stackId="18" startPc="268437813"/>
+<entry endPc="268438564" name="spdFont" stackId="19" startPc="268437813"/>
+<entry endPc="268438564" name="hrW" stackId="20" startPc="268437813"/>
+<entry arg="true" endPc="268438696" name="dc" stackId="1" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="xRight" stackId="2" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="yCenter" stackId="3" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="val" stackId="4" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="vFont" stackId="5" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="unit" stackId="6" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="uFont" stackId="7" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="vColor" stackId="8" startPc="268438566"/>
+<entry arg="true" endPc="268438696" name="uColor" stackId="9" startPc="268438566"/>
+<entry endPc="268438695" name="uw" stackId="10" startPc="268438569"/>
+<entry endPc="268438695" name="vh" stackId="11" startPc="268438569"/>
+<entry endPc="268438695" name="uh" stackId="12" startPc="268438569"/>
+<entry arg="true" endPc="268438982" name="dc" stackId="1" startPc="268438697"/>
+<entry arg="true" endPc="268438982" name="cx" stackId="2" startPc="268438697"/>
+<entry arg="true" endPc="268438982" name="cy" stackId="3" startPc="268438697"/>
+<entry arg="true" endPc="268438982" name="size" stackId="4" startPc="268438697"/>
+<entry arg="true" endPc="268438982" name="color" stackId="5" startPc="268438697"/>
+<entry endPc="268438981" name="deg" stackId="6" startPc="268438700"/>
+<entry endPc="268438981" name="pts" stackId="7" startPc="268438700"/>
+<entry endPc="268438981" name="rad" stackId="8" startPc="268438700"/>
+<entry endPc="268438981" name="c" stackId="9" startPc="268438700"/>
+<entry endPc="268438981" name="s" stackId="10" startPc="268438700"/>
+<entry endPc="268438981" name="k" stackId="11" startPc="268438700"/>
+<entry endPc="268438981" name="out" stackId="12" startPc="268438700"/>
+<entry endPc="268438955" name="i" stackId="13" startPc="268438866"/>
+<entry endPc="268438945" name="dx" stackId="14" startPc="268438866"/>
+<entry endPc="268438945" name="dy" stackId="15" startPc="268438866"/>
+<entry arg="true" endPc="268439592" name="dc" stackId="1" startPc="268438983"/>
+<entry arg="true" endPc="268439592" name="x" stackId="2" startPc="268438983"/>
+<entry arg="true" endPc="268439592" name="y" stackId="3" startPc="268438983"/>
+<entry arg="true" endPc="268439592" name="bw" stackId="4" startPc="268438983"/>
+<entry arg="true" endPc="268439592" name="bh" stackId="5" startPc="268438983"/>
+<entry arg="true" endPc="268439592" name="isHr" stackId="6" startPc="268438983"/>
+<entry endPc="268439591" name="zone" stackId="7" startPc="268438986"/>
+<entry endPc="268439591" name="cur" stackId="8" startPc="268438986"/>
+<entry endPc="268439591" name="avg" stackId="9" startPc="268438986"/>
+<entry endPc="268439591" name="zColor" stackId="10" startPc="268438986"/>
+<entry endPc="268439591" name="cx" stackId="11" startPc="268438986"/>
+<entry endPc="268439591" name="topY" stackId="12" startPc="268438986"/>
+<entry endPc="268439591" name="curTxt" stackId="13" startPc="268438986"/>
+<entry endPc="268439591" name="vFont" stackId="14" startPc="268438986"/>
+<entry endPc="268439591" name="iconS" stackId="15" startPc="268438986"/>
+<entry endPc="268439591" name="vw" stackId="16" startPc="268438986"/>
+<entry endPc="268439591" name="groupW" stackId="17" startPc="268438986"/>
+<entry endPc="268439591" name="gx" stackId="18" startPc="268438986"/>
+<entry endPc="268439591" name="subY" stackId="19" startPc="268438986"/>
+<entry endPc="268439591" name="f" stackId="20" startPc="268438986"/>
+<entry endPc="268439591" name="zTxt" stackId="21" startPc="268438986"/>
+<entry endPc="268439591" name="avgTxt" stackId="22" startPc="268438986"/>
+<entry endPc="268439591" name="zw" stackId="23" startPc="268438986"/>
+<entry endPc="268439591" name="aw" stackId="24" startPc="268438986"/>
+<entry endPc="268439591" name="total" stackId="25" startPc="268438986"/>
+<entry endPc="268439591" name="sx" stackId="26" startPc="268438986"/>
+<entry arg="true" endPc="268439696" name="v" stackId="1" startPc="268439593"/>
+<entry endPc="268439696" name="s" stackId="2" startPc="268439596"/>
+<entry endPc="268439696" name="i" stackId="3" startPc="268439596"/>
+<entry arg="true" endPc="268439770" name="dc" stackId="1" startPc="268439697"/>
+<entry arg="true" endPc="268439770" name="text" stackId="2" startPc="268439697"/>
+<entry arg="true" endPc="268439770" name="maxW" stackId="3" startPc="268439697"/>
+<entry arg="true" endPc="268439770" name="fonts" stackId="4" startPc="268439697"/>
+<entry endPc="268439756" name="i" stackId="5" startPc="268439716"/>
+<entry arg="true" endPc="268439848" name="hr" stackId="1" startPc="268439771"/>
+<entry endPc="268439848" name="zones" stackId="2" startPc="268439774"/>
+<entry endPc="268439845" name="z" stackId="3" startPc="268439819"/>
+<entry arg="true" endPc="268440092" name="dc" stackId="1" startPc="268439978"/>
+<entry arg="true" endPc="268440092" name="cx" stackId="2" startPc="268439978"/>
+<entry arg="true" endPc="268440092" name="cy" stackId="3" startPc="268439978"/>
+<entry arg="true" endPc="268440092" name="s" stackId="4" startPc="268439978"/>
+<entry arg="true" endPc="268440092" name="color" stackId="5" startPc="268439978"/>
+<entry arg="true" endPc="268440283" name="pwr" stackId="1" startPc="268440093"/>
+<entry endPc="268440283" name="ftp" stackId="2" startPc="268440096"/>
+<entry endPc="268440283" name="v" stackId="3" startPc="268440096"/>
+<entry endPc="268440142" name="e" stackId="4" startPc="268440129"/>
+<entry endPc="268440283" name="pct" stackId="5" startPc="268440096"/>
+<entry arg="true" endPc="268440568" name="dc" stackId="1" startPc="268440284"/>
+<entry endPc="268440567" name="w" stackId="2" startPc="268440287"/>
+<entry endPc="268440567" name="h" stackId="3" startPc="268440287"/>
+<entry arg="true" endPc="268441064" name="dc" stackId="1" startPc="268440569"/>
+<entry arg="true" endPc="268441064" name="x" stackId="2" startPc="268440569"/>
+<entry arg="true" endPc="268441064" name="y" stackId="3" startPc="268440569"/>
+<entry arg="true" endPc="268441064" name="bw" stackId="4" startPc="268440569"/>
+<entry arg="true" endPc="268441064" name="bh" stackId="5" startPc="268440569"/>
+<entry arg="true" endPc="268441064" name="isHr" stackId="6" startPc="268440569"/>
+<entry endPc="268441063" name="zone" stackId="7" startPc="268440572"/>
+<entry endPc="268441063" name="cur" stackId="8" startPc="268440572"/>
+<entry endPc="268441063" name="avg" stackId="9" startPc="268440572"/>
+<entry endPc="268441063" name="bg" stackId="10" startPc="268440572"/>
+<entry endPc="268441063" name="fg" stackId="11" startPc="268440572"/>
+<entry endPc="268441063" name="cy" stackId="12" startPc="268440572"/>
+<entry endPc="268441063" name="pad" stackId="13" startPc="268440572"/>
+<entry endPc="268441063" name="iconS" stackId="14" startPc="268440572"/>
+<entry endPc="268441063" name="curTxt" stackId="15" startPc="268440572"/>
+<entry endPc="268441063" name="vFont" stackId="16" startPc="268440572"/>
+<entry endPc="268441063" name="rx" stackId="17" startPc="268440572"/>
+<entry endPc="268441063" name="avgTxt" stackId="18" startPc="268440572"/>
+<entry endPc="268441063" name="avgY" stackId="19" startPc="268440572"/>
+<entry endPc="268441063" name="avgW" stackId="20" startPc="268440572"/>
+</localVars>
+<deviceInfo deviceVersion="361e256b74f66f7ba19da23c7ec7c7f06ab33c5c" partNumber="006-B4440-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FtpTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Rez" offset="242" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/CleanNavigationApp" offset="286" parentId="globals" symbolId="CleanNavigationApp" type="class"/>
+<dataEntry label="globals/CleanNavigationView" offset="357" parentId="globals" symbolId="CleanNavigationView" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="788" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="823" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="CleanNavigationApp" startPc="268435501">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="CleanNavigationView" startPc="268435513">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435527" name="onStart" parent="CleanNavigationApp" startPc="268435525">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435555" name="getInitialView" parent="CleanNavigationApp" startPc="268435528">
+<documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435570" name="initialize" parent="CleanNavigationApp" startPc="268435556">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435573" name="onStop" parent="CleanNavigationApp" startPc="268435571">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435755" name="computeWind" parent="CleanNavigationView" startPc="268435574">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436157" name="compute" parent="CleanNavigationView" startPc="268435756">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436326" name="windColors" parent="CleanNavigationView" startPc="268436158">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436491" name="drawSlimWind" parent="CleanNavigationView" startPc="268436327">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="bw"/>
+<param id="bh"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436697" name="drawHeart" parent="CleanNavigationView" startPc="268436492">
+<param id="dc"/>
+<param id="cx"/>
+<param id="cy"/>
+<param id="size"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268437008" name="drawSlim" parent="CleanNavigationView" startPc="268436698">
+<param id="dc"/>
+<param id="w"/>
+<param id="h"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268437192" name="drawBolt" parent="CleanNavigationView" startPc="268437009">
+<param id="dc"/>
+<param id="cx"/>
+<param id="cy"/>
+<param id="size"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268437279" name="drawAvgGlyph" parent="CleanNavigationView" startPc="268437193">
+<param id="dc"/>
+<param id="cx"/>
+<param id="cy"/>
+<param id="r"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268437441" name="drawValueUnitCenter" parent="CleanNavigationView" startPc="268437280">
+<param id="dc"/>
+<param id="xCenter"/>
+<param id="yCenter"/>
+<param id="val"/>
+<param id="vFont"/>
+<param id="unit"/>
+<param id="uFont"/>
+<param id="vColor"/>
+<param id="uColor"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268437806" name="drawSlimSpeed" parent="CleanNavigationView" startPc="268437442">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="bw"/>
+<param id="bh"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437809" name="onLayout" parent="CleanNavigationView" startPc="268437807">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438565" name="drawTall" parent="CleanNavigationView" startPc="268437810">
+<param id="dc"/>
+<param id="w"/>
+<param id="h"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438696" name="drawValueUnitRight" parent="CleanNavigationView" startPc="268438566">
+<param id="dc"/>
+<param id="xRight"/>
+<param id="yCenter"/>
+<param id="val"/>
+<param id="vFont"/>
+<param id="unit"/>
+<param id="uFont"/>
+<param id="vColor"/>
+<param id="uColor"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438982" name="drawWindArrow" parent="CleanNavigationView" startPc="268438697">
+<param id="dc"/>
+<param id="cx"/>
+<param id="cy"/>
+<param id="size"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439592" name="drawSlimZone" parent="CleanNavigationView" startPc="268438983">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="bw"/>
+<param id="bh"/>
+<param id="isHr"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439696" name="fmt1" parent="CleanNavigationView" startPc="268439593">
+<param id="v"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439770" name="pickFont" parent="CleanNavigationView" startPc="268439697">
+<param id="dc"/>
+<param id="text"/>
+<param id="maxW"/>
+<param id="fonts"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439848" name="hrZoneFor" parent="CleanNavigationView" startPc="268439771">
+<param id="hr"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439977" name="initialize" parent="CleanNavigationView" startPc="268439849">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268440092" name="drawMaxGlyph" parent="CleanNavigationView" startPc="268439978">
+<param id="dc"/>
+<param id="cx"/>
+<param id="cy"/>
+<param id="s"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268440283" name="pwrZoneFor" parent="CleanNavigationView" startPc="268440093">
+<param id="pwr"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440568" name="onUpdate" parent="CleanNavigationView" startPc="268440284">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441064" name="drawZoneBlock" parent="CleanNavigationView" startPc="268440569">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="bw"/>
+<param id="bh"/>
+<param id="isHr"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
