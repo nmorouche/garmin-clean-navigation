@@ -262,8 +262,9 @@ class CleanNavigationView extends WatchUi.DataField {
             return;
         }
 
-        if (h >= 350) {
-            // full/half screen: design B stack
+        if (h >= 600) {
+            // full screen only: design B stack — a half-screen slot gets the
+            // medium strip instead of a squeezed version of this
             drawFull(dc, w, h);
             return;
         }
@@ -281,18 +282,50 @@ class CleanNavigationView extends WatchUi.DataField {
 
     // ================= full screen: design B — nav / speed / wind / HR / power / footer =================
 
+    // Coordinator only: each row draws in its own helper that RETURNS before the
+    // next row starts. The on-device call stack is tiny — a big frame under a
+    // glyph call overflows it (it did), so no row work may live in this frame.
     hidden function drawFull(dc as Dc, w as Number, h as Number) as Void {
         var s = h / 800.0;
         var pad = (16 * s).toNumber() + 2;
         if (pad < 16) { pad = 16; }
         var r1H = (244 * s).toNumber();
-        var subH = (54 * s).toNumber();
         var r2H = (150 * s).toNumber();
         var r3H = (124 * s).toNumber();
         var r4H = (122 * s).toNumber();
         var r5H = (122 * s).toNumber();
 
-        // ---- row 1: relative bearing to the next course point ----
+        drawFullNav(dc, w, r1H, (54 * s).toNumber(), pad, s);
+
+        var y = r1H;
+        dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, y, w, 3);
+        y += 3;
+        drawFullSpeed(dc, y, w, r2H, pad, s);
+        y += r2H;
+        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, y, w, 2);
+        y += 2;
+        drawFullWind(dc, y, w, r3H, pad, s);
+        y += r3H;
+        dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, y, w, 2);
+        y += 2;
+        drawFullZoneRow(dc, y, w, r4H, true);
+        y += r4H;
+        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, y, w, 2);
+        y += 2;
+        drawFullZoneRow(dc, y, w, r5H, false);
+        y += r5H;
+        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, y, w, 2);
+        y += 2;
+        drawFullFooter(dc, y, w, h - y, pad);
+    }
+
+    // nav row: bearing pointer + distance + next-point name, grade / D+ / elapsed below
+    hidden function drawFullNav(dc as Dc, w as Number, r1H as Number, subH as Number, pad as Number, s as Float) as Void {
         var mainH = r1H - subH;
         var arrowS = 118 * s;
         drawNavArrow(dc, pad + arrowS / 2, mainH / 2, arrowS, cFg);
@@ -354,15 +387,10 @@ class CleanNavigationView extends WatchUi.DataField {
             Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
         var elW = dc.getTextWidthInPixels(elTxt, Graphics.FONT_SMALL);
         drawClock(dc, w - pad - elW - 16, subC, 9 * s + 4, cSub);
+    }
 
-        // strong separator under the nav row
-        var y = r1H;
-        dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0, y, w, 3);
-        y += 3;
-
-        // ---- row 2: speed — avg/max column left, current big right ----
-        var colW = (110 * s).toNumber();
+    // speed row: avg/max column left, current big right
+    hidden function drawFullSpeed(dc as Dc, y as Number, w as Number, r2H as Number, pad as Number, s as Float) as Void {
         var avgY = y + (r2H * 0.30).toNumber();
         var maxY = y + (r2H * 0.70).toNumber();
         drawAvgGlyph(dc, pad + 8, avgY, 8, cSub);
@@ -375,16 +403,14 @@ class CleanNavigationView extends WatchUi.DataField {
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         var spdTxt = fmt1(mSpd);
-        var sFont = pickFontH(dc, spdTxt, w - pad * 2 - colW - 40, r2H,
+        var sFont = pickFontH(dc, spdTxt, w - pad * 2 - (110 * s).toNumber() - 40, r2H,
             [Graphics.FONT_NUMBER_THAI_HOT, Graphics.FONT_NUMBER_HOT, Graphics.FONT_NUMBER_MEDIUM] as Array<FontDefinition>);
         drawValueUnitRight(dc, w - pad, y + r2H / 2, spdTxt, sFont, "km/h",
             Graphics.FONT_TINY, cFg, cSub);
-        y += r2H;
-        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0, y, w, 2);
-        y += 2;
+    }
 
-        // ---- row 3: wind on its cost colour ----
+    // wind row on its cost colour
+    hidden function drawFullWind(dc as Dc, y as Number, w as Number, r3H as Number, pad as Number, s as Float) as Void {
         var wc = windColors();
         dc.setColor(wc[0], Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(0, y, w, r3H);
@@ -398,44 +424,28 @@ class CleanNavigationView extends WatchUi.DataField {
             [Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD] as Array<FontDefinition>);
         drawValueUnitRight(dc, w - pad, y + r3H / 2, windTxt, wFont, "km/h",
             Graphics.FONT_XTINY, wc[1], wc[1]);
-        y += r3H;
-        dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0, y, w, 2);
-        y += 2;
+    }
 
-        // ---- row 4: heart rate, full zone fill ----
-        drawFullZoneRow(dc, y, w, r4H, true);
-        y += r4H;
-        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0, y, w, 2);
-        y += 2;
-
-        // ---- row 5: power, zone as an edge bar ----
-        drawFullZoneRow(dc, y, w, r5H, false);
-        y += r5H;
-        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0, y, w, 2);
-        y += 2;
-
-        // ---- footer: distance ridden / clock / battery ----
-        var fH = h - y;
-        if (fH > 8) {
-            dc.setColor(cPanel, Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(0, y, w, fH);
-            var fy = y + fH / 2;
-            dc.setColor(cSub, Graphics.COLOR_TRANSPARENT);
-            var clock = System.getClockTime();
-            dc.drawText(pad, fy, Graphics.FONT_XTINY,
-                clock.hour.format("%d") + ":" + clock.min.format("%02d"),
-                Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
-            var kmTxt = (mElapsedKm != null) ? fmt1(mElapsedKm) + " km" : "-- km";
-            dc.drawText(w / 2, fy, Graphics.FONT_XTINY, kmTxt,
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            var stats = System.getSystemStats();
-            if (stats != null && stats.battery != null) {
-                dc.drawText(w - pad, fy, Graphics.FONT_XTINY, stats.battery.toNumber().toString() + " %",
-                    Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
+    // footer: clock / distance ridden / battery
+    hidden function drawFullFooter(dc as Dc, y as Number, w as Number, fH as Number, pad as Number) as Void {
+        if (fH <= 8) {
+            return;
+        }
+        dc.setColor(cPanel, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, y, w, fH);
+        var fy = y + fH / 2;
+        dc.setColor(cSub, Graphics.COLOR_TRANSPARENT);
+        var clock = System.getClockTime();
+        dc.drawText(pad, fy, Graphics.FONT_XTINY,
+            clock.hour.format("%d") + ":" + clock.min.format("%02d"),
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        var kmTxt = (mElapsedKm != null) ? fmt1(mElapsedKm) + " km" : "-- km";
+        dc.drawText(w / 2, fy, Graphics.FONT_XTINY, kmTxt,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        var stats = System.getSystemStats();
+        if (stats != null && stats.battery != null) {
+            dc.drawText(w - pad, fy, Graphics.FONT_XTINY, stats.battery.toNumber().toString() + " %",
+                Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
         }
     }
 
@@ -501,75 +511,148 @@ class CleanNavigationView extends WatchUi.DataField {
 
     // ================= tall strip: wind tile + speed / HR + power =================
 
+    // Coordinator only: row-1 tiles draw in helpers that RETURN before the next
+    // runs — the on-device call stack is tiny, no big frame may sit under a glyph.
     hidden function drawTall(dc as Dc, w as Number, h as Number) as Void {
         var y0 = 2;
         var row1H = ((h - y0) * 0.54).toNumber();
-        var row2Y = y0 + row1H + 2;
-        var row2H = h - row2Y;
-
-        // ---- row 1 left tile, split in two: wind on top, grade below ----
+        // half-screen and larger slots: step the whole strip up one type tier
+        var big = row1H >= 150;
         var windW = (w * 0.25).toNumber();
+        var colX = w - (w * 0.22).toNumber();
+
+        drawTallWindGrade(dc, y0, windW, row1H, big);
+        drawTallKmTile(dc, y0, colX, w - colX, row1H, big);
+        drawTallSpeed(dc, y0, windW, colX, row1H, big);
+
+        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(windW, y0, 2, row1H);
+        dc.fillRectangle(colX - 2, y0, 2, row1H);
+        dc.fillRectangle(0, y0 + row1H, w, 2);
+
+        var row2Y = y0 + row1H + 2;
+        var hrW = (w * 0.5).toNumber() - 1;
+        drawZoneBlock(dc, 0, row2Y, hrW, h - row2Y, true);
+        dc.setColor(cTop, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(hrW, row2Y, 2, h - row2Y);
+        drawZoneBlock(dc, hrW + 2, row2Y, w - hrW - 2, h - row2Y, false);
+    }
+
+    // row 1 left tile, split in two: wind on top, grade below
+    hidden function drawTallWindGrade(dc as Dc, y0 as Number, windW as Number, row1H as Number, big as Boolean) as Void {
+        var vF = big ? Graphics.FONT_MEDIUM : Graphics.FONT_SMALL;
+        var uF = big ? Graphics.FONT_TINY : Graphics.FONT_XTINY;
         var halfH = row1H / 2;
         var wc = windColors();
         dc.setColor(wc[0], Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(0, y0, windW, halfH);
         var wCy = y0 + halfH / 2;
-        drawWindArrow(dc, (windW * 0.24).toNumber(), wCy, halfH * 0.58, wc[1]);
         var windTxt = (mWindKmh != null) ? (mWindKmh as Number).toString() : "--";
-        drawValueUnitCenter(dc, (windW * 0.66).toNumber(), wCy, windTxt,
-            Graphics.FONT_SMALL, "km/h", Graphics.FONT_XTINY, wc[1], wc[1]);
+        var wMax = windW - 12;
+        var wVF = vF;
+        var wUF = uF;
+        var aS = halfH * 0.58;
+        var wVW = dc.getTextWidthInPixels(windTxt, wVF);
+        var wUW = dc.getTextWidthInPixels("km/h", wUF);
+        var wTotal = aS + 8 + wVW + 4 + wUW;
+        // fit order: smaller fonts first, then shrink the arrow, then drop the unit
+        if (wTotal > wMax && big) {
+            wVF = Graphics.FONT_SMALL;
+            wUF = Graphics.FONT_XTINY;
+            wVW = dc.getTextWidthInPixels(windTxt, wVF);
+            wUW = dc.getTextWidthInPixels("km/h", wUF);
+            wTotal = aS + 8 + wVW + 4 + wUW;
+        }
+        if (wTotal > wMax) {
+            aS = aS - (wTotal - wMax);
+            if (aS < halfH * 0.30) { aS = halfH * 0.30; }
+            wTotal = aS + 8 + wVW + 4 + wUW;
+        }
+        if (wTotal <= wMax) {
+            var wx = (windW - wTotal) / 2;
+            drawWindArrow(dc, wx + aS / 2, wCy, aS, wc[1]);
+            dc.setColor(wc[1], Graphics.COLOR_TRANSPARENT);
+            dc.drawText(wx + aS + 8, wCy, wVF, windTxt,
+                Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(wx + aS + 8 + wVW + 4,
+                wCy + (dc.getFontHeight(wVF) - dc.getFontHeight(wUF)) * 0.26, wUF, "km/h",
+                Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        } else {
+            // no room for the text: drop it entirely — just the arrow,
+            // centred in the cell and given the freed space
+            var aOnly = halfH * 0.66;
+            if (aOnly > windW * 0.55) { aOnly = windW * 0.55; }
+            drawWindArrow(dc, windW / 2, wCy, aOnly, wc[1]);
+        }
 
         var gc = gradeColor();
         var gradeUp = (mGrade != null) ? (mGrade as Float) >= 0.0 : true;
         var gCy = y0 + halfH + halfH / 2;
-        drawGradeArrow(dc, (windW * 0.24).toNumber(), gCy, halfH * 0.44, gradeUp, gc);
         var gTxt = "-- %";
         if (mGrade != null) {
             var g = mGrade as Float;
             gTxt = fmt1(g < 0.0 ? -g : g) + " %";
         }
+        var chevS = halfH * 0.40;
+        if (chevS > 24) { chevS = 24; }
+        var chevW = chevS * 0.70;
+        var gVW = dc.getTextWidthInPixels(gTxt, vF);
+        var gTotal = chevW + 9 + gVW;
+        var gx2 = (windW - gTotal) / 2;
+        if (gx2 < 6) { gx2 = 6; }
+        drawGradeArrow(dc, gx2 + chevW / 2, gCy, chevS, gradeUp, gc);
         dc.setColor(gc, Graphics.COLOR_TRANSPARENT);
-        dc.drawText((windW * 0.40).toNumber(), gCy, Graphics.FONT_SMALL, gTxt,
+        dc.drawText(gx2 + chevW + 9, gCy, vF, gTxt,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(0, y0 + halfH, windW, 2);
-        dc.fillRectangle(windW, y0, 2, row1H);
+    }
 
-        // ---- row 1 right tile: the kilometres group — distance + total ascent ----
-        var colW = (w * 0.22).toNumber();
-        var colX = w - colW;
-        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(colX - 2, y0, 2, row1H);
-
+    // row 1 right tile: the kilometres group — distance + total ascent
+    hidden function drawTallKmTile(dc as Dc, y0 as Number, colX as Number, colW as Number, row1H as Number, big as Boolean) as Void {
+        var vF = big ? Graphics.FONT_MEDIUM : Graphics.FONT_SMALL;
+        var sF = big ? Graphics.FONT_SMALL : Graphics.FONT_TINY;
+        var uF = big ? Graphics.FONT_TINY : Graphics.FONT_XTINY;
         var tileCx = colX + colW / 2;
         var kmTxt = (mElapsedKm != null) ? fmt1(mElapsedKm) : "--";
         drawValueUnitCenter(dc, tileCx, y0 + (row1H * 0.30).toNumber(), kmTxt,
-            Graphics.FONT_SMALL, "km", Graphics.FONT_XTINY, cFg, cSub);
+            vF, "km", uF, cFg, cSub);
         var ascTxt = (mAscent != null) ? (mAscent as Float).toNumber().toString() : "--";
         var ascY = y0 + (row1H * 0.72).toNumber();
-        var ascF = Graphics.FONT_TINY;
-        var ascW = dc.getTextWidthInPixels(ascTxt, ascF);
-        var ascUW = dc.getTextWidthInPixels("m", Graphics.FONT_XTINY);
-        var ascTotal = 15 + 5 + ascW + 4 + ascUW;
+        var mtnS = big ? 20 : 15;
+        var ascW = dc.getTextWidthInPixels(ascTxt, sF);
+        var ascUW = dc.getTextWidthInPixels("m", uF);
+        var ascTotal = mtnS + 5 + ascW + 4 + ascUW;
         var ascX = tileCx - ascTotal / 2;
-        drawMountain(dc, ascX + 7, ascY, 15, cSub);
+        drawMountain(dc, ascX + mtnS / 2, ascY, mtnS, cSub);
         dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(ascX + 20, ascY, ascF, ascTxt,
+        dc.drawText(ascX + mtnS + 5, ascY, sF, ascTxt,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         dc.setColor(cSub, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(ascX + 20 + ascW + 4, ascY + 2, Graphics.FONT_XTINY, "m",
+        dc.drawText(ascX + mtnS + 5 + ascW + 4, ascY + 2, uF, "m",
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        // ---- row 1 centre: the speed cluster — current + avg/max stacked beside it ----
+    }
+
+    // row 1 centre: the speed cluster — current + avg/max stacked beside it
+    hidden function drawTallSpeed(dc as Dc, y0 as Number, windW as Number, colX as Number, row1H as Number, big as Boolean) as Void {
+        var sF = big ? Graphics.FONT_SMALL : Graphics.FONT_TINY;
+        var uF = big ? Graphics.FONT_TINY : Graphics.FONT_XTINY;
         var spdTxt = fmt1(mSpd);
-        var stackW = 70;
+        var stAvgTxt = fmt1(mAvgSpd);
+        var stMaxTxt = fmt1(mMaxSpd);
+        var glyphR = big ? 7 : 6;
+        var stTxtX = glyphR * 2 + 5;
+        var stAW = dc.getTextWidthInPixels(stAvgTxt, sF);
+        var stMW = dc.getTextWidthInPixels(stMaxTxt, sF);
+        var stackW = stTxtX + (stAW > stMW ? stAW : stMW);
         var inset = 16;  // breathing room against the tile dividers
         var availX = windW + 2 + inset;
         var availW = colX - 2 - inset - availX;
-        var unitSW = dc.getTextWidthInPixels("km/h", Graphics.FONT_XTINY);
+        var unitSW = dc.getTextWidthInPixels("km/h", uF);
         var spdFont = pickFontH(dc, spdTxt, availW - stackW - 14 - 5 - unitSW, row1H * 1.05,
-            [Graphics.FONT_NUMBER_HOT, Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD] as Array<FontDefinition>);
+            [Graphics.FONT_NUMBER_THAI_HOT, Graphics.FONT_NUMBER_HOT, Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD] as Array<FontDefinition>);
         var spdW = dc.getTextWidthInPixels(spdTxt, spdFont);
         var groupW = spdW + 5 + unitSW + 14 + stackW;
         var gx = availX + (availW - groupW) / 2;
@@ -580,31 +663,20 @@ class CleanNavigationView extends WatchUi.DataField {
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         dc.setColor(cSub, Graphics.COLOR_TRANSPARENT);
         dc.drawText(gx + spdW + 5,
-            cy + (dc.getFontHeight(spdFont) - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.26,
-            Graphics.FONT_XTINY, "km/h",
+            cy + (dc.getFontHeight(spdFont) - dc.getFontHeight(uF)) * 0.26,
+            uF, "km/h",
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         var stX = gx + spdW + 5 + unitSW + 14;
-        var avgY = y0 + (row1H * 0.30).toNumber();
-        var maxY = y0 + (row1H * 0.70).toNumber();
-        drawAvgGlyph(dc, stX + 6, avgY, 6, cSub);
+        var avgY = y0 + (row1H * 0.32).toNumber();
+        var maxY = y0 + (row1H * 0.68).toNumber();
+        drawAvgGlyph(dc, stX + glyphR, avgY, glyphR, cSub);
         dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(stX + 17, avgY, Graphics.FONT_TINY, fmt1(mAvgSpd),
+        dc.drawText(stX + stTxtX, avgY, sF, stAvgTxt,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
-        drawMaxGlyph(dc, stX + 6, maxY, 6, cSub);
+        drawMaxGlyph(dc, stX + glyphR, maxY, glyphR, cSub);
         dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(stX + 17, maxY, Graphics.FONT_TINY, fmt1(mMaxSpd),
+        dc.drawText(stX + stTxtX, maxY, sF, stMaxTxt,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
-
-        // ---- row separator ----
-        dc.setColor(cDiv, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0, y0 + row1H, w, 2);
-
-        // ---- row 2: heart rate + power blocks ----
-        var hrW = (w * 0.5).toNumber() - 1;
-        drawZoneBlock(dc, 0, row2Y, hrW, row2H, true);
-        dc.setColor(cTop, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(hrW, row2Y, 2, row2H);
-        drawZoneBlock(dc, hrW + 2, row2Y, w - hrW - 2, row2H, false);
     }
 
     // one filled block of row 2: icon + current on the left, zone + avg on the right
@@ -622,8 +694,14 @@ class CleanNavigationView extends WatchUi.DataField {
         dc.setColor(bg, Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(x, y, bw, bh);
 
+        // taller blocks (half-screen slot) step up one type tier
+        var big = bh >= 140;
+        var aFont = big ? Graphics.FONT_MEDIUM : Graphics.FONT_SMALL;
+        var zFont = big ? Graphics.FONT_SMALL : Graphics.FONT_TINY;
+        var uFont = big ? Graphics.FONT_TINY : Graphics.FONT_XTINY;
+
         var cy = y + bh / 2;
-        var pad = 12;
+        var pad = big ? 16 : 12;
         var iconS = bh * 0.24;
         if (isHr) {
             drawHeart(dc, x + pad + iconS / 2, cy, iconS, fg);
@@ -631,25 +709,25 @@ class CleanNavigationView extends WatchUi.DataField {
             drawBolt(dc, x + pad + iconS / 2, cy, iconS * 1.1, fg);
         }
         var curTxt = (cur != null) ? (cur as Number).toString() : "--";
-        var vFont = pickFont(dc, curTxt, bw * 0.42,
-            [Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD] as Array<FontDefinition>);
+        var vFont = pickFontH(dc, curTxt, bw * 0.42, bh * 0.9,
+            [Graphics.FONT_NUMBER_HOT, Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD] as Array<FontDefinition>);
         dc.setColor(fg, Graphics.COLOR_TRANSPARENT);
         dc.drawText(x + pad + iconS + 8, cy, vFont, curTxt,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         var vw2 = dc.getTextWidthInPixels(curTxt, vFont);
-        dc.drawText(x + pad + iconS + 8 + vw2 + 6, cy + bh * 0.12, Graphics.FONT_XTINY,
+        dc.drawText(x + pad + iconS + 8 + vw2 + 6, cy + bh * 0.12, uFont,
             isHr ? "bpm" : "W",
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         var rx = x + bw - pad;
         var avgTxt = (avg != null) ? (avg as Number).toString() : "--";
         var avgY = y + (bh * 0.30).toNumber();
-        dc.drawText(rx, avgY, Graphics.FONT_SMALL, avgTxt,
+        dc.drawText(rx, avgY, aFont, avgTxt,
             Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
-        var avgW = dc.getTextWidthInPixels(avgTxt, Graphics.FONT_SMALL);
-        drawAvgGlyph(dc, rx - avgW - 12, avgY, 6, fg);
+        var avgW = dc.getTextWidthInPixels(avgTxt, aFont);
+        drawAvgGlyph(dc, rx - avgW - (big ? 16 : 12), avgY, big ? 8 : 6, fg);
         if (zone != null) {
-            dc.drawText(rx, y + (bh * 0.68).toNumber(), Graphics.FONT_TINY, "Z" + zone,
+            dc.drawText(rx, y + (bh * 0.68).toNumber(), zFont, "Z" + zone,
                 Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
         }
     }
@@ -783,30 +861,29 @@ class CleanNavigationView extends WatchUi.DataField {
 
     // ================= glyphs =================
 
-    // fillPolygon only renders convex shapes reliably, so every glyph is built
-    // from convex pieces pushed through this rotate/scale/translate helper.
-    // Points are on the 24x24 design grid, centred on (12,12).
-    hidden function fillPiece(dc as Dc, pts as Array<Array<Float> >, cx as Numeric, cy as Numeric, deg as Float, k as Float) as Void {
-        var rad = deg * DEG_TO_RAD;
-        var c = Math.cos(rad);
-        var s = Math.sin(rad);
-        var out = new Array<Graphics.Point2D>[pts.size()];
-        for (var i = 0; i < pts.size(); i++) {
-            var dx = (pts[i][0] - 12.0) * k;
-            var dy = (pts[i][1] - 12.0) * k;
-            out[i] = [cx + dx * c - dy * s, cy + dx * s + dy * c] as Graphics.Point2D;
-        }
-        dc.fillPolygon(out);
-    }
+    // NOTE: glyphs call dc.fillPolygon directly — no shared helper. The device's
+    // Connect IQ call stack is shallow and one extra frame in the draw chain
+    // (onUpdate → tier → block → glyph → helper) overflows it on real hardware.
+    // Shapes stay convex pieces: fillPolygon mis-renders concave polygons.
 
     // design-B navigation pointer, rotated to the relative bearing of the next point
     hidden function drawNavArrow(dc as Dc, cx as Numeric, cy as Numeric, size as Numeric, color as Number) as Void {
         var deg = (mBearingRelDeg != null) ? (mBearingRelDeg as Number).toFloat() : 0.0;
+        var rad = deg * DEG_TO_RAD;
+        var c = Math.cos(rad);
+        var s = Math.sin(rad);
         var k = size / 24.0;
+        // dart split down the middle into two triangles (offsets from centre)
+        var pts = [[0.0, -10.4], [8.6, 10.4], [0.0, 5.9], [-8.6, 10.4]];
+        var rp = new Array<Graphics.Point2D>[4];
+        for (var i = 0; i < 4; i++) {
+            var dx = pts[i][0] * k;
+            var dy = pts[i][1] * k;
+            rp[i] = [cx + dx * c - dy * s, cy + dx * s + dy * c] as Graphics.Point2D;
+        }
         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
-        // dart split down the middle into two triangles
-        fillPiece(dc, [[12.0, 1.6], [20.6, 22.4], [12.0, 17.9]], cx, cy, deg, k);
-        fillPiece(dc, [[12.0, 1.6], [12.0, 17.9], [3.4, 22.4]], cx, cy, deg, k);
+        dc.fillPolygon([rp[0], rp[1], rp[2]]);
+        dc.fillPolygon([rp[0], rp[2], rp[3]]);
     }
 
     // chevron pointing up (climbing) or down (descending), two parallelogram arms
@@ -852,11 +929,22 @@ class CleanNavigationView extends WatchUi.DataField {
 
     hidden function drawWindArrow(dc as Dc, cx as Numeric, cy as Numeric, size as Numeric, color as Number) as Void {
         var deg = (mWindRelDeg != null) ? (mWindRelDeg as Number).toFloat() : 0.0;
+        var rad = deg * DEG_TO_RAD;
+        var c = Math.cos(rad);
+        var s = Math.sin(rad);
         var k = size / 24.0;
+        // triangle head + rectangular stem, both convex (offsets from centre)
+        var pts = [[0.0, -9.6], [8.0, -0.2], [-8.0, -0.2],
+                   [-3.4, -0.2], [3.4, -0.2], [3.4, 9.6], [-3.4, 9.6]];
+        var rp = new Array<Graphics.Point2D>[7];
+        for (var i = 0; i < 7; i++) {
+            var dx = pts[i][0] * k;
+            var dy = pts[i][1] * k;
+            rp[i] = [cx + dx * c - dy * s, cy + dx * s + dy * c] as Graphics.Point2D;
+        }
         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
-        // triangle head + rectangular stem, both convex
-        fillPiece(dc, [[12.0, 2.4], [20.0, 11.8], [4.0, 11.8]], cx, cy, deg, k);
-        fillPiece(dc, [[8.6, 11.8], [15.4, 11.8], [15.4, 21.6], [8.6, 21.6]], cx, cy, deg, k);
+        dc.fillPolygon([rp[0], rp[1], rp[2]]);
+        dc.fillPolygon([rp[3], rp[4], rp[5], rp[6]]);
     }
 
     hidden function drawHeart(dc as Dc, cx as Numeric, cy as Numeric, size as Numeric, color as Number) as Void {
@@ -871,12 +959,18 @@ class CleanNavigationView extends WatchUi.DataField {
 
     hidden function drawBolt(dc as Dc, cx as Numeric, cy as Numeric, size as Numeric, color as Number) as Void {
         var k = size / 24.0;
+        // no rotation — scaled centre offsets, drawn as four convex triangles
+        var pTip = [cx + 1.4 * k, cy - 10.2 * k];
+        var pL = [cx - 8.0 * k, cy + 1.9 * k];
+        var pM = [cx - 1.7 * k, cy + 1.9 * k];
+        var pB = [cx - 2.6 * k, cy + 10.2 * k];
+        var pR = [cx + 7.6 * k, cy - 2.4 * k];
+        var pC = [cx + 1.2 * k, cy - 2.4 * k];
         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
-        // concave bolt triangulated into four convex pieces
-        fillPiece(dc, [[13.4, 1.8], [4.0, 13.9], [10.3, 13.9]], cx, cy, 0.0, k);
-        fillPiece(dc, [[13.4, 1.8], [10.3, 13.9], [13.2, 9.6]], cx, cy, 0.0, k);
-        fillPiece(dc, [[13.2, 9.6], [10.3, 13.9], [19.6, 9.6]], cx, cy, 0.0, k);
-        fillPiece(dc, [[10.3, 13.9], [9.4, 22.2], [19.6, 9.6]], cx, cy, 0.0, k);
+        dc.fillPolygon([pTip, pL, pM]);
+        dc.fillPolygon([pTip, pM, pC]);
+        dc.fillPolygon([pC, pM, pR]);
+        dc.fillPolygon([pM, pB, pR]);
     }
 
     hidden function drawAvgGlyph(dc as Dc, cx as Numeric, cy as Numeric, r as Numeric, color as Number) as Void {
