@@ -250,6 +250,18 @@ class CleanNavigationView extends WatchUi.DataField {
         var w = dc.getWidth();
         var h = dc.getHeight();
 
+        // the three designs are all full-width; a half-width slot can't hold them
+        if (w < 400) {
+            dc.setColor(cSub, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(w / 2, h / 2 - dc.getFontHeight(Graphics.FONT_XTINY) * 0.6,
+                Graphics.FONT_XTINY, "CleanNav",
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(w / 2, h / 2 + dc.getFontHeight(Graphics.FONT_XTINY) * 0.6,
+                Graphics.FONT_XTINY, "full-width only",
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            return;
+        }
+
         if (h >= 350) {
             // full/half screen: design B stack
             drawFull(dc, w, h);
@@ -468,12 +480,10 @@ class CleanNavigationView extends WatchUi.DataField {
         var vx = x + pad + iconS + 10;
         dc.drawText(vx, cy, vFont, curTxt,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
-        if (!isHr) {
-            var vw = dc.getTextWidthInPixels(curTxt, vFont);
-            dc.setColor(sub, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(vx + vw + 8, cy + rh * 0.12, Graphics.FONT_TINY, "W",
-                Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
-        }
+        var vw = dc.getTextWidthInPixels(curTxt, vFont);
+        dc.setColor(sub, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(vx + vw + 8, cy + rh * 0.12, Graphics.FONT_TINY, isHr ? "bpm" : "W",
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         var rx = w - pad;
         dc.setColor(fg, Graphics.COLOR_TRANSPARENT);
@@ -621,23 +631,27 @@ class CleanNavigationView extends WatchUi.DataField {
             drawBolt(dc, x + pad + iconS / 2, cy, iconS * 1.1, fg);
         }
         var curTxt = (cur != null) ? (cur as Number).toString() : "--";
-        var vFont = pickFont(dc, curTxt, bw * 0.48,
+        var vFont = pickFont(dc, curTxt, bw * 0.42,
             [Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD] as Array<FontDefinition>);
         dc.setColor(fg, Graphics.COLOR_TRANSPARENT);
         dc.drawText(x + pad + iconS + 8, cy, vFont, curTxt,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        var vw2 = dc.getTextWidthInPixels(curTxt, vFont);
+        dc.drawText(x + pad + iconS + 8 + vw2 + 6, cy + bh * 0.12, Graphics.FONT_XTINY,
+            isHr ? "bpm" : "W",
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         var rx = x + bw - pad;
-        if (zone != null) {
-            dc.drawText(rx, y + (bh * 0.30).toNumber(), Graphics.FONT_TINY, "Z" + zone,
-                Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
-        }
         var avgTxt = (avg != null) ? (avg as Number).toString() : "--";
-        var avgY = y + (bh * 0.68).toNumber();
+        var avgY = y + (bh * 0.30).toNumber();
         dc.drawText(rx, avgY, Graphics.FONT_SMALL, avgTxt,
             Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
         var avgW = dc.getTextWidthInPixels(avgTxt, Graphics.FONT_SMALL);
         drawAvgGlyph(dc, rx - avgW - 12, avgY, 6, fg);
+        if (zone != null) {
+            dc.drawText(rx, y + (bh * 0.68).toNumber(), Graphics.FONT_TINY, "Z" + zone,
+                Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
     }
 
     // ================= slim strip: four tiles in a row =================
@@ -646,9 +660,10 @@ class CleanNavigationView extends WatchUi.DataField {
         var y0 = 2;
         var bh = h - y0;
         var inner = w - 6; // three 2px dividers
-        var w0 = (inner * 0.214).toNumber();
-        var w1 = (inner * 0.286).toNumber();
-        var w2 = (inner * 0.25).toNumber();
+        // HR/power tiles get a little more room than design C so the bpm/W units fit
+        var w0 = (inner * 0.19).toNumber();
+        var w1 = (inner * 0.26).toNumber();
+        var w2 = (inner * 0.275).toNumber();
         var w3 = inner - w0 - w1 - w2;
 
         var x = 0;
@@ -674,35 +689,38 @@ class CleanNavigationView extends WatchUi.DataField {
         var wc = windColors();
         var tint = (mWindRelDeg != null) ? wc[0] : cSub;
         var cx = x + bw / 2;
-        drawWindArrow(dc, cx, y + (bh * 0.36).toNumber(), bh * 0.34, tint);
+        drawWindArrow(dc, cx, y + (bh * 0.38).toNumber(), bh * 0.34, tint);
         var windTxt = (mWindKmh != null) ? (mWindKmh as Number).toString() : "--";
-        drawValueUnitCenter(dc, cx, y + (bh * 0.78).toNumber(), windTxt,
-            Graphics.FONT_NUMBER_MILD, "km/h", Graphics.FONT_XTINY, cFg, cSub);
+        // design C: wind value one step below the speed/HR/power values
+        drawValueUnitCenter(dc, cx, y + (bh * 0.72).toNumber(), windTxt,
+            Graphics.FONT_SMALL, "km/h", Graphics.FONT_XTINY, cFg, cSub);
     }
 
     hidden function drawSlimSpeed(dc as Dc, x as Number, y as Number, bw as Number, bh as Number) as Void {
         var cx = x + bw / 2;
         var spdTxt = fmt1(mSpd);
-        var vFont = pickFont(dc, spdTxt, bw * 0.72,
-            [Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD] as Array<FontDefinition>);
-        drawValueUnitCenter(dc, cx, y + (bh * 0.34).toNumber(), spdTxt, vFont,
+        // the value + its km/h unit together must clear the dividers
+        var unitW = dc.getTextWidthInPixels("km/h", Graphics.FONT_XTINY);
+        var vFont = pickFontH(dc, spdTxt, bw - 20 - 4 - unitW, bh * 0.40,
+            [Graphics.FONT_NUMBER_MEDIUM, Graphics.FONT_NUMBER_MILD, Graphics.FONT_SMALL] as Array<FontDefinition>);
+        drawValueUnitCenter(dc, cx, y + (bh * 0.38).toNumber(), spdTxt, vFont,
             "km/h", Graphics.FONT_XTINY, cFg, cSub);
 
         // avg + max side by side
-        var subY = y + (bh * 0.78).toNumber();
+        var subY = y + (bh * 0.72).toNumber();
         var avgTxt = fmt1(mAvgSpd);
         var maxTxt = fmt1(mMaxSpd);
         var f = Graphics.FONT_XTINY;
         var aw = dc.getTextWidthInPixels(avgTxt, f);
         var mw = dc.getTextWidthInPixels(maxTxt, f);
-        var total = 12 + 4 + aw + 14 + 10 + 4 + mw;
+        var total = 8 + 4 + aw + 14 + 8 + 4 + mw;
         var sx = cx - total / 2;
-        drawAvgGlyph(dc, sx + 6, subY, 5, cSub);
+        drawAvgGlyph(dc, sx + 4, subY, 4, cSub);
         dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(sx + 16, subY, f, avgTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
-        drawMaxGlyph(dc, sx + 16 + aw + 14 + 5, subY, 5, cSub);
+        dc.drawText(sx + 12, subY, f, avgTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        drawMaxGlyph(dc, sx + 12 + aw + 14 + 4, subY, 4, cSub);
         dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(sx + 16 + aw + 14 + 14, subY, f, maxTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(sx + 12 + aw + 14 + 12, subY, f, maxTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     hidden function drawSlimZone(dc as Dc, x as Number, y as Number, bw as Number, bh as Number, isHr as Boolean) as Void {
@@ -716,39 +734,51 @@ class CleanNavigationView extends WatchUi.DataField {
         dc.fillRectangle(x, y, 9, bh);
 
         var cx = x + 9 + (bw - 9) / 2;
-        var topY = y + (bh * 0.34).toNumber();
+        var topY = y + (bh * 0.38).toNumber();
         var curTxt = (cur != null) ? (cur as Number).toString() : "--";
-        var vFont = pickFont(dc, curTxt, (bw - 9) * 0.62,
-            [Graphics.FONT_NUMBER_MILD, Graphics.FONT_SMALL] as Array<FontDefinition>);
+        var unit = isHr ? "bpm" : "W";
+        var uw = dc.getTextWidthInPixels(unit, Graphics.FONT_XTINY);
         var iconS = bh * 0.13;
+        // keep a clear margin between the zone bar and the icon+value+unit group
+        var margin = 6;
+        var innerW = bw - 9 - margin * 2;
+        var vFont = pickFont(dc, curTxt, innerW - iconS - 5 - 3 - uw,
+            [Graphics.FONT_NUMBER_MILD, Graphics.FONT_SMALL] as Array<FontDefinition>);
         var vw = dc.getTextWidthInPixels(curTxt, vFont);
-        var groupW = iconS + 6 + vw;
-        var gx = cx - groupW / 2;
+        var groupW = iconS + 5 + vw + 3 + uw;
+        var gx = x + 9 + margin + (innerW - groupW) / 2;
+        if (gx < x + 9 + margin) { gx = x + 9 + margin; }
         if (isHr) {
             drawHeart(dc, gx + iconS / 2, topY, iconS, zColor);
         } else {
             drawBolt(dc, gx + iconS / 2, topY, iconS * 1.1, zColor);
         }
         dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(gx + iconS + 6, topY, vFont, curTxt,
+        dc.drawText(gx + iconS + 5, topY, vFont, curTxt,
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.setColor(cSub, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(gx + iconS + 5 + vw + 3,
+            topY + (dc.getFontHeight(vFont) - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.26,
+            Graphics.FONT_XTINY, unit,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        // zone label + average underneath
-        var subY = y + (bh * 0.78).toNumber();
-        var f = Graphics.FONT_XTINY;
+        // zone label + average underneath — design C: label one step smaller than the value
+        var subY = y + (bh * 0.72).toNumber();
+        var zF = Graphics.FONT_XTINY;
+        var aF = Graphics.FONT_TINY;
         var zTxt = (zone != null) ? "Z" + zone : "";
         var avgTxt = (avg != null) ? (avg as Number).toString() : "--";
-        var zw = dc.getTextWidthInPixels(zTxt, f);
-        var aw = dc.getTextWidthInPixels(avgTxt, f);
-        var total = zw + 10 + 12 + 4 + aw;
+        var zw = dc.getTextWidthInPixels(zTxt, zF);
+        var aw = dc.getTextWidthInPixels(avgTxt, aF);
+        var total = zw + 10 + 8 + 4 + aw;
         var sx = cx - total / 2;
         if (zone != null) {
             dc.setColor(zColor, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(sx, subY, f, zTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(sx, subY + 1, zF, zTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         }
-        drawAvgGlyph(dc, sx + zw + 10 + 5, subY, 5, cSub);
+        drawAvgGlyph(dc, sx + zw + 10 + 4, subY, 4, cSub);
         dc.setColor(cFg, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(sx + zw + 10 + 14, subY, f, avgTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(sx + zw + 10 + 12, subY, aF, avgTxt, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     // ================= glyphs =================
